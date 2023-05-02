@@ -1,0 +1,30 @@
+{
+  "name": "telegraf-command-handler",
+  "version": "1.0.0",
+  "description": "just a command handler for Telegraf",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JastinXyz/telegraf-command-handler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JastinXyz/telegraf-command-handler/issues"
+  },
+  "homepage": "https://github.com/JastinXyz/telegraf-command-handler#readme",
+  "keywords": [
+    "telegraf",
+    "command",
+    "command-handler"
+  ],
+  "author": "JstnLT <jastinlinggar@gmail.com> (jstnlt.my.id)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.16.3"
+  },
+  "dependencies": {
+    "telegraf": "^4.12.2"
+  }
+}
