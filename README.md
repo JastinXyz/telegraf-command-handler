@@ -34,7 +34,7 @@ bot.use(CommandHandler.load());
 ```js
 /* command file */
 module.exports = {
-    name: "start"
+    name: "start",
     async execute(ctx) {
         ctx.reply("hello world");
     }
