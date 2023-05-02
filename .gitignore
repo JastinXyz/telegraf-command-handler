@@ -2,3 +2,4 @@
 /cmd
 /dist
 test.js
+.npmrc

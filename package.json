@@ -4,7 +4,8 @@
   "description": "just a command handler for Telegraf",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "tsc && npm run publish"
   },
   "repository": {
     "type": "git",
