@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "package:publish": "tsc && npm run publish"
   },
   "repository": {
     "type": "git",
