@@ -7,7 +7,7 @@ interface Options {
   errorHandling: (ctx: Context, error: any) => any | undefined;
 }
 
-class TelegramCommandHandler {
+class TelegrafCommandHandler {
   path: string;
   errorHandling: (ctx: Context, error: any) => any | undefined;
   commands: Map<string, any>;
@@ -79,4 +79,4 @@ class TelegramCommandHandler {
   }
 }
 
-exports.TelegramCommandHandler = TelegramCommandHandler;
+exports.TelegrafCommandHandler = TelegrafCommandHandler;

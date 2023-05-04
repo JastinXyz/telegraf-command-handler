@@ -17,12 +17,12 @@ pnpm add telegraf-command-handler
 ```js
 /* main file */
 const { Telegraf } = require('telegraf');
-const { TelegramCommandHandler } = require('telegraf-command-handler');
+const { TelegrafCommandHandler } = require('telegraf-command-handler');
 const path = require('path');
 
 const bot = new Telegraf('Your bot token');
 
-const CommandHandler = new TelegramCommandHandler({
+const CommandHandler = new TelegrafCommandHandler({
     path: path.resolve() + "/path/to/dir",
 });
 
