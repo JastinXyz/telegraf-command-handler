@@ -1,6 +1,7 @@
-import { Composer, Context } from "telegraf";
+import { Composer, Context, MiddlewareFn } from "telegraf";
 import fs, { Stats } from "fs";
 import path from "node:path";
+import { Update } from "telegraf/typings/core/types/typegram";
 
 interface Options {
   path: string;
@@ -31,7 +32,7 @@ class TelegrafCommandHandler {
     });
   }
 
-  load() {
+  load(): MiddlewareFn<Context<Update>> {
     return Composer.on(["edited_message", "message"], async (ctx, next) => {
       let message = ctx.editedMessage ?? ctx.message as any;
       let text = message.text ?? message.caption;
@@ -79,4 +80,4 @@ class TelegrafCommandHandler {
   }
 }
 
-exports.TelegrafCommandHandler = TelegrafCommandHandler;
+export { TelegrafCommandHandler };

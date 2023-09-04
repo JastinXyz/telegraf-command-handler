@@ -1,6 +1,7 @@
 /cmd
 /src
 test.js
+test.ts
 pnpm-lock.yaml
 tsconfig.json
 .gitignore
