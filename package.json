@@ -1,6 +1,6 @@
 {
   "name": "telegraf-command-handler",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "just a command handler for Telegraf",
   "main": "dist/index.js",
   "scripts": {

@@ -10,7 +10,7 @@ interface Options {
 
 class TelegrafCommandHandler {
   path: string;
-  errorHandling: (ctx: Context, error: any) => any | undefined;
+  errorHandling?: (ctx: Context, error: any) => any | undefined;
   commands: Map<string, any>;
 
   constructor(opts: Options) {
