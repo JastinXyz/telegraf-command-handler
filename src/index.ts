@@ -5,7 +5,7 @@ import { Update } from "telegraf/typings/core/types/typegram";
 
 interface Options {
   path: string;
-  errorHandling: (ctx: Context, error: any) => any | undefined;
+  errorHandling?: (ctx: Context, error: any) => any | undefined;
 }
 
 class TelegrafCommandHandler {
